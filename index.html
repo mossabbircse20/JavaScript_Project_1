@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            joti: ["Joti One","serif","Azeret Mono"],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Joti+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-joti">
+    <header>
+        <h1 class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-[2rem] h-[4rem] border-[1px] text-black text-center pt-[0.5rem] ">Rock,Paper,Scissor Game</h1>
+    </header>
+    <main>
+        <div id="choices" class="flex justify-center content-center w-100 gap-[6rem] mt-[5rem]" >
+            <div id="rock" class="flex justify-center content-center h-[300px] w-[300px] rounded-full border-[1rem] border-indigo-500 hover:border-black cursor-pointer ">
+                <img src="./Images/Rock_icon.png" class="object-cover rounded-full text-center" >
+            </div>
+            <div id="paper" class="flex justify-center content-center h-[300px] w-[300px] rounded-full border-[1rem] border-green-500  hover:border-black cursor-pointer">
+                <img src="./Images/Paper_icon.png" class="object-cover rounded-full text-center" >
+            </div>
+            <div id="scissor" class="flex justify-center content-center h-[300px] w-[300px] rounded-full border-[1rem] border-red-600 hover:border-black cursor-pointer">
+                <img src="./Images/Scissor_icon.png" class="object-cover rounded-full text-center" >
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
