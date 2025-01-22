@@ -65,3 +65,29 @@ const showResult = (userWin,userChoice,compChoice) => {
         document.getElementById("result-msg").style.border= "5px solid #B22222";
     }
 }
+
+//adding a restart button
+
+let pageReload = () => {
+    location.reload();
+}
+
+let button = document.createElement("button");
+
+button.innerText = "Retry";
+button.style.height = "50px";
+button.style.width = "100px";
+button.style.border = "1px solid white";
+button.style.borderRadius = "5px";
+
+let mainBody = document.querySelector("main");
+
+mainBody.append(button);
+
+const retryGame = () => {
+    button.addEventListener("click", () => {
+        pageReload();
+    });
+}
+
+retryGame();

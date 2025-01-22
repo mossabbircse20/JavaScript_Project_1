@@ -25,40 +25,40 @@
 </head>
 <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-joti">
     <header>
-        <h1 class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-[2rem] h-[4rem] text-black text-center pt-[0.5rem] ">Rock,Paper,Scissor Game</h1>
+        <h1 class="bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-[1rem] sm:text-[2rem] h-[4rem] sm:h-[5rem] text-black text-center pt-[0.5rem] flex items-center justify-center ">Rock,Paper,Scissor Game</h1>
     </header>
-    <main class="flex-col justify-items-center content-center">
-        <div class="flex justify-center items-center w-100 gap-[6rem] mt-[5rem]" >
-            <div class="flex justify-center items-center h-[300px] w-[300px] rounded-full border-[1rem] border-indigo-500 hover:border-black cursor-pointer ">
+    <main class="flex-col justify-items-center content-center p-4">
+        <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-12 mt-8" >
+            <div class="flex justify-center items-center h-36 w-36 sm:h-60 sm:w-60 rounded-full border-8 border-indigo-500 hover:border-black cursor-pointer ">
                 <img id="Rock" src="./Images/Rock_icon.png" class="object-cover rounded-full text-center" >
             </div>
-            <div  class="flex justify-center items-center h-[300px] w-[300px] rounded-full border-[1rem] border-green-500  hover:border-black cursor-pointer">
+            <div  class="flex justify-center items-center h-36 w-36 sm:h-60 sm:w-60 rounded-full border-8 border-green-500  hover:border-black cursor-pointer">
                 <img id="Paper" src="./Images/Paper_icon.png" class="object-cover rounded-full text-center" >
             </div>
-            <div class="flex justify-center items-center h-[300px] w-[300px] rounded-full border-[1rem] border-red-600 hover:border-black cursor-pointer">
+            <div class="flex justify-center items-center h-36 w-36 sm:h-60 sm:w-60 rounded-full border-8 border-red-600 hover:border-black cursor-pointer">
                 <img id="Scissor" src="./Images/Scissor_icon.png" class="object-cover rounded-full text-center" >
             </div>
           </div>
 
-        <div id="score" class="flex justify-center items-center text-[2rem] gap-[6rem] mt-[5rem] ">
+        <div id="score" class="flex flex-wrap justify-center items-center text-lg sm:text-6xl gap-6 sm:gap-12 mt-8 ">
           <div class="flex-col justify-items-center content-center p-[10px] font-bold">
             <h1>Your Score</h1>
-            <p id="user-score" class="text-[3.5rem]">0</p>
+            <p id="user-score" class="text-4x1 sm:text-6x1">0</p>
           </div>
           <div class="flex-col justify-items-center content-center p-[10px] font-bold">
             <h1>Computer Score</h1>
-            <p id="comp-score" class="text-[3.5rem]">0</p>
+            <p id="comp-score" class="text-4x1 sm:text-6x1">0</p>
           </div>
         </div>
     </main>
     <footer>
-      <div id="result-msg" class="flex justify-center items-center text-[2.5rem] text-center border-[2px] m-[4rem] p-[10px] rounded-[2rem] h-[10rem] font-bold">
+      <div id="result-msg" class="flex justify-center items-center text-lg sm:text-2xl text-center border-2 m-4 p-4 rounded-2xl h-32 sm:h-40 font-bold">
         <p>Start Game! See Result here.</p>
       </div>
 
-      <div id="rules-section" class="flex-col justify-items-center content-center text-[2.5rem] m-[2rem] p-[10px]">
+      <div id="rules-section" class="flex-col justify-items-center content-center text-lg sm:text-2xl m-4 p-4">
         <h1>How to play this Game?</h1>
-        <img src="./Images/Rock-paper-scissors_rules.png" class="h-[500px] border-[2px] border-blue-800  rounded-[1rem] object-fill mt-[20px]">
+        <img src="./Images/Rock-paper-scissors_rules.png" class="h-64 sm:h-96 border-2 border-blue-800 rounded-lg object-contain mt-4">
       </div>
     </footer>
 
